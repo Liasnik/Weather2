@@ -313,7 +313,7 @@ const Body = () => {
           <p>{weather.coord.lon}</p>
         </div>
       </div> */}
-      <h4>AlexWeather</h4>
+      <h4>AlexanderWeather</h4>
     </div>
   )
 }

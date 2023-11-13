@@ -46,12 +46,10 @@ function App() {
     }
     // .unwrap()
     // .then((data) => {
-    //   // Данные успешно загружены и доступны в переменной "data"
     //   console.log(data)
     //   setWeather(data)
     // })
     // .catch((error) => {
-    //   // Ошибка при загрузке данных
     //   console.error('%cПомилка: ', 'color: yellow', error)
     // })
   }, [city, update, dispatch])
@@ -76,14 +74,15 @@ function App() {
   return (  
     <div className="bgContainer">
       <div className="overlay"></div>
-        <BgVideo theme={theme}/>
-        <div className="container">
-          <div className="App">
-            <Menu setSelectCity={setSelectCity} setUpdate={setUpdate} theme={theme} setTheme={setTheme}/>
-            <Header />
-            <Body />
-          </div>
-        </div>     
+
+      <BgVideo theme={theme}/>   
+      <div className="container">
+        <div className="App">
+          <Menu setSelectCity={setSelectCity} setUpdate={setUpdate} theme={theme} setTheme={setTheme}/>
+          <Header />
+          <Body />
+        </div>
+      </div>  
     </div>
   )
 }
