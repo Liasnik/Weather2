@@ -1,0 +1,39 @@
+.day {
+  display: flex;
+  gap: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  gap: 4px;
+  width: 90px;
+  height: 130px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #616972a4;
+  overflow: hidden;
+  box-shadow: 3px 3px 18px -4px rgba(0, 0, 0, 0.51);
+  color: #ffffff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 13px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,337 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  transition: background-color 1s;
+  // color: black;
+  padding: 14px 0;
+  height: 53px;
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: rgba(0, 0, 0, 0.6);
+  //   opacity: 0;
+  //   transition: opacity 1s;
+  //   z-index: -1;
+  // }
+
+  // &.scroll:before {
+  //   box-shadow: 3px 3px 22px -4px rgba(121, 121, 121, 0.51);
+  //   opacity: 1;
+  // }
+
+  .label_city {
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(255, 242, 96);
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 23px;
+  }
+
+  span {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.menu_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+  height: 20px;
+  flex-shrink: 0;
+  justify-content: space-between;
+  margin-right: 14px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu {
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1px;
+}
+
+.menu_open {
+  &::before {
+    content: '';
+    position: absolute;
+    background: rgb(133, 131, 131);
+    width: 4px;
+    height: 30px;
+    right: 27px;
+    top: 12px;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    background: rgb(133, 131, 131);
+    width: 4px;
+    height: 30px;
+    right: 27px;
+    top: 12px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
+}
+
+.menu_close {
+  &::before {
+    content: '';
+    position: absolute;
+    background: rgb(211, 211, 211);
+    width: 2px;
+    height: 30px;
+    right: 27px;
+    top: 12px;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    background: rgb(211, 211, 211);
+    width: 2px;
+    height: 30px;
+    right: 27px;
+    top: 12px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
+}
+
+.popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(44, 44, 44, 0.7);
+  }
+
+  .modal {
+    position: absolute;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
+    width: 250px;
+    height: 420px;
+    border-radius: 40px 0 40px 40px;
+    background-color: rgb(21, 25, 43);
+    padding: 60px 25px 25px;
+    color: rgb(255, 255, 255);
+    z-index: 100;
+    animation: appear 0.2s linear forwards;
+
+    @keyframes appear {
+      0% {
+        top: -400px;
+      }
+      100% {
+        top: 0;
+      }
+    }
+
+    @media (max-height: 500px) {
+      & {
+        height: 320px;
+        padding-bottom: 15px;
+      }
+    }
+
+    label {
+    }
+
+    .label {
+      position: absolute;
+      top: 75px;
+      // margin-bottom: -35px;
+      font-size: 18px;
+      font-weight: 400;
+      cursor: pointer;
+      z-index: -1;
+      &:hover {
+        color: rgb(255, 242, 96);
+      }
+    }
+
+    .update {
+      margin-bottom: 35px;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(255, 242, 96);
+      }
+    }
+
+    .selectBlock {
+    }
+
+    .select {
+    }
+
+    select {
+      width: 210px;
+      padding: 5px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      outline: none;
+      cursor: pointer;
+      color: transparent;
+      background-color: transparent;
+
+      option {
+        color: black;
+        background-color: rgb(200, 203, 208);
+        padding: 20px;
+      }
+    }
+
+    .bottomBlock {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .add_location {
+      cursor: pointer;
+      &:hover {
+        color: rgb(255, 242, 96);
+      }
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    input {
+      width: 210px;
+      padding: 5px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      outline: none;
+    }
+
+    .buttons_block {
+      display: flex;
+      gap: 8px;
+      // width: 100%;
+      justify-content: space-between;
+
+      padding-right: 16px;
+    }
+
+    button {
+      width: 100px;
+      height: 30px;
+      flex-shrink: 0;
+      border-radius: 20px;
+      background: #e6e6e6;
+      color: rgb(52, 51, 51);
+      border: none;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      box-shadow: inset -8px -9px 28px -3px rgba(80, 80, 80, 0.51);
+
+      // &:hover {
+      //   background: #de6363;
+      // }
+    }
+
+    .buttonDelete {
+      cursor: pointer;
+      &:hover {
+        background: #f77070;
+      }
+      &:active {
+        background: #e72c2c;
+      }
+    }
+
+    .add {
+      cursor: pointer;
+      &:hover {
+        background: #63de88;
+      }
+      &:active {
+        background: #1faa2f;
+      }
+    }
+
+    .button_disabled {
+      color: rgb(94, 94, 94);
+    }
+
+    .reset_form {
+      align-self: flex-start;
+
+      .reset {
+        width: 35px;
+        background: #7d1d1d;
+        color: white;
+        font-size: 16px;
+        font-weight: normal;
+
+        cursor: pointer;
+
+        &:hover {
+          background: #d03030;
+        }
+        &:active {
+          background: #e91010;
+        }
+      }
+    }
+
+    button.theme {
+      margin-top: 20px;
+      cursor: pointer;
+      &:hover {
+        background: #f7f7f7;
+      }
+      &:active {
+        background: #bbbbbb;
+      }
+    }
+  }
+}
+.scroll {
+  box-shadow: 3px 3px 22px -4px rgba(121, 121, 121, 0.51);
+  background-color: rgba(0, 0, 0, 0.6);
+}
