@@ -59,6 +59,10 @@ const Menu = ({ setSelectCity, setUpdate, theme, setTheme }) => {
   const selectedRef = useRef(null)
   const [labelCity, setLabelCity] = useState('')
 
+  const handleTheme = (e) => {
+    setTheme(e.target.value)
+  }
+
   // const [labelCity, setLabelCity] = useState(
   //   cities.find((city) => city.value === inputCity)?.label ?? cities[0].label
   // )
@@ -255,8 +259,8 @@ const Menu = ({ setSelectCity, setUpdate, theme, setTheme }) => {
                 <label htmlFor="select">
                   <div className={styles.label}>Вибрати місто</div>
                   {/* <Select options={initialCities} styles={selectStyles} /> */}
-                  <div className={styles.select}>
-                    <select name="city" id="select" onChange={handleChange}>
+                  <div >
+                    <select className={styles.select} name="city" id="select" onChange={handleChange}>
                       {cities.map((item) => (
                         <option value={item.value} key={item.id}>
                           {item.label}
@@ -324,12 +328,17 @@ const Menu = ({ setSelectCity, setUpdate, theme, setTheme }) => {
                   </form>
                 )}
               </div>
-              <button
+              {/* <button
                onClick={() => theme === false ? setTheme(true) :  setTheme(false)}
                className={styles.theme }
               >
                 Тема
-              </button>
+              </button> */}
+              <select className={styles.selectTheme} onChange={handleTheme} name="theme" id="selectTheme">
+                <option value="photo-1">фон 1</option>
+                <option value="video-1">фон 2</option>
+                <option value="video-2">фон 3</option>
+              </select>
             </div>
             
           </div>

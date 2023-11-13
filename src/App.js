@@ -20,7 +20,7 @@ function storageCity(name) {
 // }
 
 function App() {
-  const [theme, setTheme] = useState(false)
+  const [theme, setTheme] = useState('')
   //const data = useSelector((state) => state.currentWeather.weather)
   const dispatch = useDispatch()
 
@@ -74,8 +74,7 @@ function App() {
   return (  
     <div className="bgContainer">
       <div className="overlay"></div>
-
-      <BgVideo theme={theme}/>   
+       {theme && theme !== 'photo-1' && <BgVideo theme={theme}/>}
       <div className="container">
         <div className="App">
           <Menu setSelectCity={setSelectCity} setUpdate={setUpdate} theme={theme} setTheme={setTheme}/>
