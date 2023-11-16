@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/Weather2/static/css/main.b0d46ab1.css",
-    "main.js": "/Weather2/static/js/main.9d17925f.js",
+    "main.js": "/Weather2/static/js/main.77ecd607.js",
     "static/js/787.13d76ca7.chunk.js": "/Weather2/static/js/787.13d76ca7.chunk.js",
-    "static/media/cover5.mp4": "/Weather2/static/media/cover5.a0ea09df7d1379888e2a.mp4",
     "static/media/bird.mp4": "/Weather2/static/media/bird.eff28e48472ae298e4bc.mp4",
+    "static/media/cover5-780.mp4": "/Weather2/static/media/cover5-780.131d2a103aebdb06ef79.mp4",
     "static/media/cover1.mp4": "/Weather2/static/media/cover1.2c253dfebef915ad4a31.mp4",
     "static/media/novyi-svet1.jpg": "/Weather2/static/media/novyi-svet1.372d6f1f1ee32179e927.jpg",
     "static/media/karadag2.jpg": "/Weather2/static/media/karadag2.6fd309490360bb213042.jpg",
@@ -29,11 +29,11 @@
     "static/media/01d.svg": "/Weather2/static/media/01d.dd4da50059cc12456859a08a54c0803d.svg",
     "index.html": "/Weather2/index.html",
     "main.b0d46ab1.css.map": "/Weather2/static/css/main.b0d46ab1.css.map",
-    "main.9d17925f.js.map": "/Weather2/static/js/main.9d17925f.js.map",
+    "main.77ecd607.js.map": "/Weather2/static/js/main.77ecd607.js.map",
     "787.13d76ca7.chunk.js.map": "/Weather2/static/js/787.13d76ca7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0d46ab1.css",
-    "static/js/main.9d17925f.js"
+    "static/js/main.77ecd607.js"
   ]
 }
