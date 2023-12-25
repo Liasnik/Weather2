@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/Weather2/static/css/main.c5f69c64.css",
-    "main.js": "/Weather2/static/js/main.b08742e2.js",
+    "main.js": "/Weather2/static/js/main.6fcab825.js",
     "static/js/787.13d76ca7.chunk.js": "/Weather2/static/js/787.13d76ca7.chunk.js",
-    "static/media/night-53.mp4": "/Weather2/static/media/night-53.0ed9f34de79ecdb1c095.mp4",
-    "static/media/swimmer.mp4": "/Weather2/static/media/swimmer.131d2a103aebdb06ef79.mp4",
     "static/media/chayka780.mp4": "/Weather2/static/media/chayka780.e5271eb4aea9b2a2a06a.mp4",
-    "static/media/cellist2.mp4": "/Weather2/static/media/cellist2.a382e431e182754083e2.mp4",
+    "static/media/cover1.mp4": "/Weather2/static/media/cover1.2c253dfebef915ad4a31.mp4",
+    "static/media/water.mp4": "/Weather2/static/media/water.e68de6ab0b17704068f7.mp4",
     "static/media/the-last-kiss.mp3": "/Weather2/static/media/the-last-kiss.4304db61cc0eff86e54f.mp3",
     "static/media/coverr-erotica.mp3": "/Weather2/static/media/coverr-erotica.b93ad7e507ccfb75593c.mp3",
     "static/media/powerful-trailer.mp3": "/Weather2/static/media/powerful-trailer.2066655bc27232a8841d.mp3",
@@ -34,11 +33,11 @@
     "static/media/01d.svg": "/Weather2/static/media/01d.dd4da50059cc12456859a08a54c0803d.svg",
     "index.html": "/Weather2/index.html",
     "main.c5f69c64.css.map": "/Weather2/static/css/main.c5f69c64.css.map",
-    "main.b08742e2.js.map": "/Weather2/static/js/main.b08742e2.js.map",
+    "main.6fcab825.js.map": "/Weather2/static/js/main.6fcab825.js.map",
     "787.13d76ca7.chunk.js.map": "/Weather2/static/js/787.13d76ca7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5f69c64.css",
-    "static/js/main.b08742e2.js"
+    "static/js/main.6fcab825.js"
   ]
 }
